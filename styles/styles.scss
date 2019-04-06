@@ -1,0 +1,37 @@
+@import "colors";
+@import "fonts";
+@import "overlay";
+
+.portfolio{
+    padding: 2%;
+}
+
+.personal-info{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    &__image{
+        width: 200px;
+        border-radius: 100px;
+    }
+    &__skills{
+        display: inline;
+    }
+}
+
+.project{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &--large{
+     height: 60vh;   
+    }
+    &--small{
+        height: 30vh;
+    }
+    &__image{
+        &--game-of-boards{
+            background-image: url(../img/apple-606761_1280.jpg);
+        }
+    }
+}
