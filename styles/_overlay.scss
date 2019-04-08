@@ -6,36 +6,67 @@
     height: 100%;
     transition: all .5s;
     &:hover {
-        background-color: rgba(255,255,255,.9);
         transition: all .5s;
+    }
+    &--1{
+        color: $white;
+        &:hover{
+            background-color: $brown-transparent;
+        }
+    }
+    &--2{
+        color: $light-pink;
+        &:hover{
+            background-color: $dark-pink-transparent;
+        }
+    }
+    &--3{
+        color: $black;
+        &:hover{
+            background-color: $pink-transparent;
+        }
+    }
+    &--4{
+        color: $pink;
+        &:hover{
+            background-color: $black-transparent;
+        }
     }
 }
 
 .label{
+    font-family: $roboto;
+    font-size: 1.4em;
     position: absolute;
     top: 20px;
     left: -200px;
-    color: red;
+    //color: $dark-pink;
     transition: all .5s;
+    opacity: 0;
 }
 .overlay:hover .label{
     top: 20px;
     left: 20px;
     animation: slidein-title .5s 1s 1;
     transition: all .7s;
+    opacity: 1;
 }
 
 
 .title{
+    font-family: $playfair;
+    font-size: 45px;
     position: absolute;
     bottom: 20px;
     right: -300px;
-    color: red;
+    //color: $dark-pink;
+    opacity: 0;
     transition: all .5s;
 }
 .overlay:hover .title{
     bottom: 20px;
     right: 20px;
+    opacity: 1;
     animation: slidein-title .5s 1s 1;
     transition: all .7s;
 }

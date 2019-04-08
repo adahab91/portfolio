@@ -2,6 +2,16 @@
 @import "fonts";
 @import "overlay";
 
+body{
+    background-color: $light-pink;
+}
+
+p{
+    font-family: $roboto;
+    color: $black;
+}
+
+
 .portfolio{
     padding: 2%;
 }
@@ -14,6 +24,14 @@
         width: 200px;
         border-radius: 100px;
     }
+    &__name{
+        font-family: $playfair;
+        font-size: 45px;
+    }
+    &__title{
+        font-family: $roboto;
+        font-weight: 400;
+    }
     &__skills{
         display: inline;
     }
@@ -23,6 +41,7 @@
     position: relative;
     display: block;
     overflow: hidden;
+    border: 3px solid $white;
     &--large{
      height: 60vh;   
     }

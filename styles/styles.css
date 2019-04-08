@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto:400,500");
 .overlay {
   position: absolute;
   top: 0;
@@ -8,16 +8,41 @@
   transition: all 0.5s;
 }
 .overlay:hover {
-  background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.5s;
+}
+.overlay--1 {
+  color: #fffdfd;
+}
+.overlay--1:hover {
+  background-color: rgba(89, 68, 64, 0.9);
+}
+.overlay--2 {
+  color: #f2e0de;
+}
+.overlay--2:hover {
+  background-color: rgba(216, 114, 91, 0.9);
+}
+.overlay--3 {
+  color: #271f23;
+}
+.overlay--3:hover {
+  background-color: rgba(242, 163, 145, 0.9);
+}
+.overlay--4 {
+  color: #f2a391;
+}
+.overlay--4:hover {
+  background-color: rgba(39, 31, 35, 0.9);
 }
 
 .label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
   position: absolute;
   top: 20px;
   left: -200px;
-  color: red;
   transition: all 0.5s;
+  opacity: 0;
 }
 
 .overlay:hover .label {
@@ -25,21 +50,34 @@
   left: 20px;
   animation: slidein-title 0.5s 1s 1;
   transition: all 0.7s;
+  opacity: 1;
 }
 
 .title {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
   position: absolute;
   bottom: 20px;
   right: -300px;
-  color: red;
+  opacity: 0;
   transition: all 0.5s;
 }
 
 .overlay:hover .title {
   bottom: 20px;
   right: 20px;
+  opacity: 1;
   animation: slidein-title 0.5s 1s 1;
   transition: all 0.7s;
+}
+
+body {
+  background-color: #f2e0de;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #271f23;
 }
 
 .portfolio {
@@ -55,6 +93,14 @@
   width: 200px;
   border-radius: 100px;
 }
+.personal-info__name {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+.personal-info__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
 .personal-info__skills {
   display: inline;
 }
@@ -63,6 +109,7 @@
   position: relative;
   display: block;
   overflow: hidden;
+  border: 3px solid #fffdfd;
 }
 .project--large {
   height: 60vh;
