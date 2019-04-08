@@ -23,7 +23,7 @@
     &--3{
         color: $black;
         &:hover{
-            background-color: $pink-transparent;
+            background-color: $light-pink-transparent;
         }
     }
     &--4{
@@ -46,6 +46,7 @@
     left: -200px;
     transition: all .5s;
     opacity: 0;
+    margin: 0;
 }
 .overlay:hover .label{
     top: 20px;
@@ -64,6 +65,7 @@
     right: -300px;
     opacity: 0;
     transition: all .5s;
+    margin: 0;
 }
 .overlay:hover .title{
     bottom: 20px;

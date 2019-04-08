@@ -8,31 +8,62 @@ body{
 
 p{
     font-family: $roboto;
+    font-weight: 100;
     color: $black;
+}
+a{
+    &:hover{
+        cursor: default;
+    }
 }
 
 .portfolio{
     padding: 2%;
 }
 
+.social{
+    text-align: right;
+    &__icon{
+        font-size: 1.6em;
+        color: $black;
+        margin-left: 15px;
+        &:hover{
+            cursor: default;
+            color: $dark-pink;
+        }
+        
+    }
+    
+}
+
 .personal-info{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25vh;
     text-align: center;
+
     &__image{
         width: 200px;
         border-radius: 100px;
+        border: 3px solid $white;
     }
     &__name{
         font-family: $playfair;
         font-size: 45px;
+        margin-top: 30px;
     }
     &__title{
         font-family: $roboto;
         font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    &__text{
+        margin-top: 30px;
     }
     &__skills{
-        display: inline;
+        display: inline-block;
+        margin: 0 15px;
     }
 }
 
@@ -47,10 +78,16 @@ p{
         height: 38vw;
         max-height: 594px;  
         padding: 15px;
+        @media screen and (max-width: 767px){
+            height: 50vh;
+        }
     }
     &--small{
         height: 50%;
         padding: 15px;
+        @media screen and (max-width: 767px){
+            height: 100%;
+        }
     }
     &__image{
         &--game-of-boards{
@@ -64,4 +101,15 @@ p{
     padding: 0;
     height: 38vw;
     max-height: 594px; 
+    @media screen and (max-width: 767px){
+        height: 50vh;
+    }
+}
+
+.footer{
+    //background-color: $white;
+    margin-top: 60px;
+    &__text{
+        text-align: center;
+    }
 }

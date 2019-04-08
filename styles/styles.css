@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto:100,400,500");
 .overlay {
   position: absolute;
   top: 0;
@@ -26,7 +26,7 @@
   color: #271f23;
 }
 .overlay--3:hover {
-  background-color: rgba(242, 163, 145, 0.9);
+  background-color: rgba(242, 224, 222, 0.9);
 }
 .overlay--4 {
   color: #f2a391;
@@ -47,6 +47,7 @@
   left: -200px;
   transition: all 0.5s;
   opacity: 0;
+  margin: 0;
 }
 
 .overlay:hover .label {
@@ -65,6 +66,7 @@
   right: -300px;
   opacity: 0;
   transition: all 0.5s;
+  margin: 0;
 }
 
 .overlay:hover .title {
@@ -81,32 +83,59 @@ body {
 
 p {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
   color: #271f23;
+}
+
+a:hover {
+  cursor: default;
 }
 
 .portfolio {
   padding: 2%;
 }
 
+.social {
+  text-align: right;
+}
+.social__icon {
+  font-size: 1.6em;
+  color: #271f23;
+  margin-left: 15px;
+}
+.social__icon:hover {
+  cursor: default;
+  color: #d8725b;
+}
+
 .personal-info {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25vh;
   text-align: center;
 }
 .personal-info__image {
   width: 200px;
   border-radius: 100px;
+  border: 3px solid #fffdfd;
 }
 .personal-info__name {
   font-family: "Playfair Display", serif;
   font-size: 45px;
+  margin-top: 30px;
 }
 .personal-info__title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+.personal-info__text {
+  margin-top: 30px;
 }
 .personal-info__skills {
-  display: inline;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .project {
@@ -122,9 +151,19 @@ p {
   max-height: 594px;
   padding: 15px;
 }
+@media screen and (max-width: 767px) {
+  .project--large {
+    height: 50vh;
+  }
+}
 .project--small {
   height: 50%;
   padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .project--small {
+    height: 100%;
+  }
 }
 .project__image--game-of-boards {
   background: url(../img/apple-606761_1280.jpg) center center no-repeat;
@@ -135,6 +174,18 @@ p {
   padding: 0;
   height: 38vw;
   max-height: 594px;
+}
+@media screen and (max-width: 767px) {
+  .small-project-container {
+    height: 50vh;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+}
+.footer__text {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,31 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Portfolio, Front-end Developer - Ada Elise Håberg</title>
   </head>
   <body>
-    <div class="[ container ][ personal-info ]">
-        <img class="[ personal-info__image ]" src="./img/adaelise.jpg">
-        <h1 class="[ personal-info__name ]">Ada Elise Håberg</h1>
-        <h3 class="[ personal-info__title ]">Front-end Developer</h3>
-
-        <p class="[ personal-info__skills ]" > HTML / CSS </p>
-        <p class="[ personal-info__skills ]" > JavaScript </p>
-        <p class="[ personal-info__skills ]" > Photoshop, Illustrator and Adobe XD </p>
-        <p class="[ personal-info__skills ]" > Angular </p>
-    </div>
-
     <div class="[ container-fluid ][ portfolio ]">
-        <div class="[ row ][ ]">
+        <div class="[ social ]">
+                <a class="[ social__link ]" href="https://github.com/adahab91"><i class="[ fab fa-github ][ social__icon ]"></i></a> 
+                <a class="[ social__link ]" href="#"><i class="[ fab fa-facebook ][ social__icon ]"></i></a> 
+                <a class="[ social__link ]" href="#"><i class="[ fab fa-instagram ][ social__icon ]"></i></a>
+        </div>
+        <div class="[ container ][ personal-info ]">
+            <img class="[ personal-info__image ]" src="./img/adaelise.jpg">
+            <h1 class="[ personal-info__name ]">Ada Elise Håberg</h1>
+            <h3 class="[ personal-info__title ]">Front-end Developer</h3>
+            <p class="[ personal-info__text ]"><span class="[ personal-info__skills ]" >HTML/CSS</span><span class="[ personal-info__skills ]">Sass</span><span class="[ personal-info__skills ]" >JavaScript</span><span class="[ personal-info__skills ]" >Photoshop</span><span class="[ personal-info__skills ]" >Illustrator</span><span class="[ personal-info__skills ]" >AdobeXD</span><span class="[ personal-info__skills ]" >Angular</span></p>        
+        </div>
 
-
+        <div class="[ row ]">
             <!--______1 ROW___________-->
             <!--large project image-->
             <div class="[ col-md-8 ][ project--large ]">
                 <div class="[ project project__image--game-of-boards ]">
                     <a class="[ overlay__link ]" href="#">
-                        <div class="[ overlay overlay--2 ]">
+                        <div class="[ overlay overlay--4 ]">
                             <h3 class="[ label ]" >Semester project - Noroff</h3>
                             <h2 class="[ title ]" >Game of Boards</h2>
                         </div>
@@ -44,7 +44,7 @@
                 <div class="[ col-12 ][ project--small ]" >
                     <div class="[ project project__image--game-of-boards ]">
                         <a class="[ overlay__link ]" href="#">
-                            <div class="[ overlay overlay--1 ]">
+                            <div class="[ overlay overlay--2 ]">
                                 <h3 class="[ label ]" >School project - Noroff</h3>
                                 <h1 class="[ title ]" >Style Guide</h1>
                             </div>
@@ -54,7 +54,7 @@
                 <div class="[ col-12 ][ project--small ]" >
                     <div class="[ project project__image--game-of-boards ]">
                         <a class="[ overlay__link ]" href="#">
-                            <div class="[ overlay overlay--1 ]">
+                            <div class="[ overlay overlay--3 ]">
                                 <h3 class="[ label ]" >School project - Noroff</h3>
                                 <h1 class="[ title ]" >Style Guide</h1>
                             </div>
@@ -81,7 +81,7 @@
                 <div class="[ col-12 ][ project--small ]" >
                     <div class="[ project project__image--game-of-boards ]">
                         <a class="[ overlay__link ]" href="#">
-                            <div class="[ overlay overlay--1 ]">
+                            <div class="[ overlay overlay--4 ]">
                                 <h3 class="[ label ]" >School project - Noroff</h3>
                                 <h1 class="[ title ]" >Style Guide</h1>
                             </div>
@@ -103,6 +103,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="[ container ][ footer ]">
+        <p class="[ footer__text ]">© 2019 Ada Elise Håberg. All rights reserved. </p>
     </div>
 
     <!-- Optional JavaScript -->
