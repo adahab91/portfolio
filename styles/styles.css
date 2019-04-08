@@ -34,10 +34,14 @@
 .overlay--4:hover {
   background-color: rgba(39, 31, 35, 0.9);
 }
+.overlay__link {
+  cursor: default;
+}
 
 .label {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  text-transform: uppercase;
   position: absolute;
   top: 20px;
   left: -200px;
@@ -110,15 +114,27 @@ p {
   display: block;
   overflow: hidden;
   border: 3px solid #fffdfd;
+  margin: 0;
 }
 .project--large {
-  height: 60vh;
+  height: 38vw;
+  max-height: 594px;
 }
 .project--small {
-  height: 30vh;
+  height: 50%;
 }
 .project__image--game-of-boards {
-  background-image: url(../img/apple-606761_1280.jpg);
+  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
+  background-size: cover;
+}
+.project__container {
+  padding: 50px;
+}
+
+.small-project-container {
+  padding: 0;
+  height: 38vw;
+  max-height: 594px;
 }
 
 /*# sourceMappingURL=styles.css.map */
