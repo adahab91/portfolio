@@ -49,6 +49,11 @@
   opacity: 0;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .label {
+    font-size: 1em;
+  }
+}
 
 .overlay:hover .label {
   top: 20px;
@@ -68,6 +73,11 @@
   transition: all 0.5s;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 35px;
+  }
+}
 
 .overlay:hover .title {
   bottom: 20px;
@@ -75,6 +85,76 @@
   opacity: 1;
   animation: slidein-title 0.5s 1s 1;
   transition: all 0.7s;
+}
+
+.game-of-boards-school-p {
+  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.style-guide-school-p {
+  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+}
+.logo__name {
+  color: #271f23;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  text-shadow: 1px 2px white;
+}
+@media screen and (max-width: 450px) {
+  .logo__name {
+    font-size: 35px;
+  }
+}
+.logo__name:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo__link:hover {
+  text-decoration: none;
+}
+
+.project-page {
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+.project-page__heading {
+  text-align: right;
+  border-bottom: 3px solid #fffdfd;
+}
+.project-page__heading--medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+.project-page__text-container {
+  margin-top: 10px;
+}
+.project-page__text {
+  padding-right: 10vh;
+  font-weight: 400;
+  margin-bottom: 5vh;
+}
+.project-page__vw-image-container {
+  margin: 0;
+  padding: 0;
+}
+.project-page__vw-image {
+  width: 100%;
+}
+
+.game-of-boards__container {
+  margin: 0;
+  padding: 15vh;
+  background-color: #fffdfd;
+}
+.game-of-boards__img-container {
+  padding: 5vh;
 }
 
 body {
@@ -85,50 +165,91 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: #271f23;
+  line-height: 27px;
+}
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 0.85em;
+  }
 }
 
-a:hover {
+h1:hover, h2:hover, h3:hover, p:hover {
   cursor: default;
 }
 
 .portfolio {
   padding: 2%;
+  overflow: hidden;
+}
+.portfolio__heading {
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
 }
 
 .social {
   text-align: right;
 }
+.social__link {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  z-index: 2;
+}
+.social__link:hover {
+  cursor: pointer;
+}
 .social__icon {
   font-size: 1.6em;
   color: #271f23;
-  margin-left: 15px;
+  padding: 5px;
 }
 .social__icon:hover {
-  cursor: default;
   color: #d8725b;
 }
 
 .personal-info {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 20vh;
   text-align: center;
+  margin-bottom: 10vh;
+}
+@media screen and (max-width: 450px) {
+  .personal-info {
+    margin-top: 15vh;
+  }
 }
 .personal-info__image {
   width: 200px;
   border-radius: 100px;
   border: 3px solid #fffdfd;
 }
+@media screen and (max-width: 450px) {
+  .personal-info__image {
+    width: 170px;
+  }
+}
 .personal-info__name {
   font-family: "Playfair Display", serif;
   font-size: 45px;
   margin-top: 30px;
+  text-shadow: 1px 2px white;
+}
+@media screen and (max-width: 450px) {
+  .personal-info__name {
+    font-size: 35px;
+  }
 }
 .personal-info__title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.3em;
+}
+@media screen and (max-width: 450px) {
+  .personal-info__title {
+    font-size: 1.1em;
+  }
 }
 .personal-info__text {
   margin-top: 30px;
@@ -165,9 +286,12 @@ a:hover {
     height: 100%;
   }
 }
-.project__image--game-of-boards {
-  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
-  background-size: cover;
+.project__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8725b;
+  color: #f2e0de;
 }
 
 .small-project-container {
@@ -182,7 +306,7 @@ a:hover {
 }
 
 .footer {
-  margin-top: 60px;
+  margin-top: 10vh;
 }
 .footer__text {
   text-align: center;

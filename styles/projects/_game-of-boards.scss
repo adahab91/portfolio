@@ -1,0 +1,10 @@
+.game-of-boards{
+    &__container{
+        margin: 0;
+        padding: 15vh;
+        background-color: $white;
+    }
+    &__img-container{
+        padding: 5vh;
+    }
+}

@@ -1,0 +1,50 @@
+.logo{
+    position: absolute;
+    &__name{
+        color: $black;
+        font-family: $playfair;
+        font-size: 45px;
+        text-shadow: 1px 2px white;
+        @media screen and (max-width: 450px){
+            font-size: 35px;
+        }
+        &:hover{
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    &__link{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.project-page{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    &__heading{
+        text-align: right;
+        border-bottom: 3px solid $white;
+        &--medium{
+            font-family: $roboto;
+            font-size: 1.3em;
+            text-transform: uppercase;
+        }
+    }
+    &__text-container{
+        margin-top: 10px;
+    }
+    &__text{
+        padding-right: 10vh;
+        font-weight: 400;
+        margin-bottom: 5vh;
+    }
+    &__vw-image-container{
+        margin: 0;
+        padding: 0;
+    }
+    &__vw-image{
+        width: 100%;
+    }
+}

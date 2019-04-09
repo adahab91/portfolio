@@ -1,17 +1,24 @@
 @import "colors";
 @import "fonts";
 @import "overlay";
+@import "projects";
+
+@import "./projects/project-page";
+@import "./projects/game-of-boards";
 
 body{
     background-color: $light-pink;
 }
-
 p{
     font-family: $roboto;
     font-weight: 100;
     color: $black;
+    line-height: 27px;
+    @media screen and (max-width: 450px){
+        font-size: .85em;
+    }
 }
-a{
+h1, h2, h3, p{
     &:hover{
         cursor: default;
     }
@@ -19,44 +26,68 @@ a{
 
 .portfolio{
     padding: 2%;
+    overflow: hidden;
+    &__heading{
+        font-size: 45px;
+        font-family: $playfair;    
+    }
 }
 
 .social{
     text-align: right;
+    &__link{
+        display: inline-block;
+        position: relative;
+        margin-left: 15px;
+        z-index: 2;
+        &:hover{
+            cursor: pointer;
+        }
+    }
     &__icon{
         font-size: 1.6em;
         color: $black;
-        margin-left: 15px;
+        padding: 5px;
         &:hover{
-            cursor: default;
             color: $dark-pink;
         }
-        
     }
-    
 }
 
 .personal-info{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25vh;
+    margin-top: 20vh;
     text-align: center;
-
+    margin-bottom: 10vh;
+    @media screen and (max-width: 450px){
+        margin-top: 15vh;
+    }
     &__image{
         width: 200px;
         border-radius: 100px;
         border: 3px solid $white;
+        @media screen and (max-width: 450px){
+            width: 170px;
+        }
     }
     &__name{
         font-family: $playfair;
         font-size: 45px;
         margin-top: 30px;
+        text-shadow: 1px 2px white;
+        @media screen and (max-width: 450px){
+            font-size: 35px;
+        }
     }
     &__title{
         font-family: $roboto;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.3em;
+        @media screen and (max-width: 450px){
+            font-size: 1.1em;
+        }
     }
     &__text{
         margin-top: 30px;
@@ -89,11 +120,12 @@ a{
             height: 100%;
         }
     }
-    &__image{
-        &--game-of-boards{
-            background: url(../img/apple-606761_1280.jpg) center center no-repeat;
-            background-size: cover;
-        }
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-pink;
+        color: $light-pink;
     }
 }
 
@@ -107,8 +139,7 @@ a{
 }
 
 .footer{
-    //background-color: $white;
-    margin-top: 60px;
+    margin-top: 10vh;
     &__text{
         text-align: center;
     }
