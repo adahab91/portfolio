@@ -5,7 +5,7 @@
         font-family: $playfair;
         font-size: 45px;
         text-shadow: 1px 2px white;
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 350px){
             font-size: 35px;
         }
         &:hover{
@@ -23,22 +23,35 @@
 .project-page{
     margin-top: 15vh;
     margin-bottom: 10vh;
+    overflow: hidden;
     &__heading{
         text-align: right;
         border-bottom: 3px solid $white;
+        @media screen and (max-width: 767px){
+            text-align: left;
+        }  
         &--medium{
             font-family: $roboto;
             font-size: 1.3em;
-            text-transform: uppercase;
+            text-transform: uppercase;   
         }
     }
     &__text-container{
-        margin-top: 10px;
+        margin-top: 10px;  
+        @media screen and (max-width: 767px){
+            margin-top: 10vh;
+        }  
+        @media screen and (max-width: 350px){
+            padding: 20px;
+        }    
     }
     &__text{
         padding-right: 10vh;
         font-weight: 400;
         margin-bottom: 5vh;
+        @media screen and (max-width: 767px){
+            padding-right: 0;
+        }  
     }
     &__vw-image-container{
         margin: 0;

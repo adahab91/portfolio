@@ -88,7 +88,7 @@
 }
 
 .game-of-boards-school-p {
-  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
+  background: url(../img/projects/game-of-boards/index.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -106,7 +106,7 @@
   font-size: 45px;
   text-shadow: 1px 2px white;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
   .logo__name {
     font-size: 35px;
   }
@@ -122,10 +122,16 @@
 .project-page {
   margin-top: 15vh;
   margin-bottom: 10vh;
+  overflow: hidden;
 }
 .project-page__heading {
   text-align: right;
   border-bottom: 3px solid #fffdfd;
+}
+@media screen and (max-width: 767px) {
+  .project-page__heading {
+    text-align: left;
+  }
 }
 .project-page__heading--medium {
   font-family: "Roboto", sans-serif;
@@ -135,10 +141,25 @@
 .project-page__text-container {
   margin-top: 10px;
 }
+@media screen and (max-width: 767px) {
+  .project-page__text-container {
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  .project-page__text-container {
+    padding: 20px;
+  }
+}
 .project-page__text {
   padding-right: 10vh;
   font-weight: 400;
   margin-bottom: 5vh;
+}
+@media screen and (max-width: 767px) {
+  .project-page__text {
+    padding-right: 0;
+  }
 }
 .project-page__vw-image-container {
   margin: 0;
@@ -152,6 +173,11 @@
   margin: 0;
   padding: 15vh;
   background-color: #fffdfd;
+}
+@media screen and (max-width: 450px) {
+  .game-of-boards__container {
+    padding: 0;
+  }
 }
 .game-of-boards__img-container {
   padding: 5vh;
