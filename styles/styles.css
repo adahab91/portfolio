@@ -87,13 +87,18 @@
   transition: all 0.7s;
 }
 
-.game-of-boards-school-p {
+.game-of-boards-sp {
   background: url(../img/projects/game-of-boards/index.png) center center no-repeat;
   background-size: cover;
 }
 
-.style-guide-school-p {
-  background: url(../img/apple-606761_1280.jpg) center center no-repeat;
+.style-guide-sp {
+  background: url(../img/projects/style-guide/styleguide-imac.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.letha-sp {
+  background: url(../img/projects/letha-sp/frontpg.jpg) center top no-repeat;
   background-size: cover;
 }
 
@@ -140,6 +145,7 @@
 }
 .project-page__text-container {
   margin-top: 10px;
+  padding-left: 3%;
 }
 @media screen and (max-width: 767px) {
   .project-page__text-container {
@@ -174,12 +180,31 @@
   padding: 15vh;
   background-color: #fffdfd;
 }
+@media screen and (max-width: 1200px) {
+  .game-of-boards__container {
+    padding: 4vh;
+  }
+}
 @media screen and (max-width: 450px) {
   .game-of-boards__container {
     padding: 0;
   }
 }
 .game-of-boards__img-container {
+  padding: 5vh;
+}
+
+.style-guide__container {
+  margin: 0;
+  padding: 15vh;
+  background-color: #fffdfd;
+}
+@media screen and (max-width: 450px) {
+  .style-guide__container {
+    padding: 0;
+  }
+}
+.style-guide__img-container {
   padding: 5vh;
 }
 
