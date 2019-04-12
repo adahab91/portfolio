@@ -1,0 +1,19 @@
+.science-museum{
+    &__container{
+        margin: 0;
+        padding: 15vh;
+        background-color: $white;
+        @media screen and (max-width: 1200px){
+            padding: 4vh;
+        }  
+        @media screen and (max-width: 450px){
+            padding: 0;
+        }
+    }
+    &__img{
+        filter: invert(100);
+    }
+    &__img-container{
+        padding: 5vh;
+    }
+}

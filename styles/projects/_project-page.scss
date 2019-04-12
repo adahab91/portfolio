@@ -61,4 +61,16 @@
     &__vw-image{
         width: 100%;
     }
+    &__goto{
+        text-align: center;
+        margin-top: 15vh;
+    margin-bottom: 10vh;
+        &--link{
+            color: $dark-pink;
+            &:hover{
+                color: $pink;
+                text-decoration: none;
+            }
+        }
+    }
 }

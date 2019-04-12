@@ -102,6 +102,11 @@
   background-size: cover;
 }
 
+.science-museum-sp {
+  background: url(../img/projects/science-museum-sp/index.jpg) center top no-repeat;
+  background-size: cover;
+}
+
 .logo {
   position: absolute;
 }
@@ -174,6 +179,18 @@
 .project-page__vw-image {
   width: 100%;
 }
+.project-page__goto {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+.project-page__goto--link {
+  color: #d8725b;
+}
+.project-page__goto--link:hover {
+  color: #f2a391;
+  text-decoration: none;
+}
 
 .game-of-boards__container {
   margin: 0;
@@ -205,6 +222,32 @@
   }
 }
 .style-guide__img-container {
+  padding: 5vh;
+}
+
+.letha__carousel {
+  padding: 0;
+}
+
+.science-museum__container {
+  margin: 0;
+  padding: 15vh;
+  background-color: #fffdfd;
+}
+@media screen and (max-width: 1200px) {
+  .science-museum__container {
+    padding: 4vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .science-museum__container {
+    padding: 0;
+  }
+}
+.science-museum__img {
+  filter: invert(100);
+}
+.science-museum__img-container {
   padding: 5vh;
 }
 
