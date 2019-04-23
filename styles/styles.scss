@@ -1,7 +1,8 @@
 @import "colors";
 @import "fonts";
-@import "overlay";
+@import "project-overlay";
 @import "projects";
+@import "components";
 
 @import "./projects/project-page";
 @import "./projects/game-of-boards";
@@ -28,7 +29,7 @@ h1, h2, h3, p{
 }
 
 .portfolio{
-    padding: 2%;
+    padding: 5%;
     overflow: hidden;
     &__heading{
         font-size: 45px;
@@ -60,9 +61,10 @@ h1, h2, h3, p{
 .personal-info{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
     text-align: center;
     margin-bottom: 10vh;
+    position: relative;
     @media screen and (max-width: 450px){
         margin-top: 15vh;
     }
