@@ -97,6 +97,11 @@
   background-size: cover;
 }
 
+.angular-app-sp {
+  background-color: green;
+  background-size: cover;
+}
+
 .letha-sp {
   background: url(../img/projects/letha-sp/frontpg.jpg) center top no-repeat;
   background-size: cover;
@@ -105,6 +110,17 @@
 .science-museum-sp {
   background: url(../img/projects/science-museum-sp/index.jpg) center top no-repeat;
   background-size: cover;
+}
+
+.social-project__github {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.social-project__mail {
+  position: absolute;
+  top: 5%;
+  right: 25%;
 }
 
 .back-to-top {
@@ -121,6 +137,11 @@
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+}
+@media screen and (max-width: 992px) {
+  .back-to-top {
+    display: none;
+  }
 }
 
 @keyframes bounce {
@@ -323,10 +344,24 @@ h1:hover, h2:hover, h3:hover, p:hover {
   top: 35%;
   right: 1.5%;
 }
+@media screen and (max-width: 992px) {
+  .social__link--github {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
 .social__link--mail {
   position: fixed;
   top: 45%;
   right: 1.5%;
+}
+@media screen and (max-width: 992px) {
+  .social__link--mail {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+  }
 }
 .social__icon {
   font-size: 1.6em;
@@ -390,6 +425,10 @@ h1:hover, h2:hover, h3:hover, p:hover {
   margin: 0 15px;
 }
 
+.leitha {
+  z-index: 5;
+}
+
 .project {
   position: relative;
   display: block;
@@ -415,6 +454,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
 @media screen and (max-width: 767px) {
   .project--small {
     height: 100%;
+    display: inline-block;
   }
 }
 .project__text {
