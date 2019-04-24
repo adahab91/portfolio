@@ -12,20 +12,25 @@
     <title>Portfolio, Front-end Developer - Ada Elise Håberg</title>
   </head>
   <body>
-      <div class="[ back-to-top__overlay ]">
-            <p class="[ back-to-top__to ]">To</p>
-            <p class="[ back-to-top__top ]">Top</p>
-            <i class="[ fas fa-hand-pointer ][ back-to-top ]"></i>
-      </div>
+
+    <!--Social media, and mail-->
+    <div class="[ social ]">
+        <a class="[ social__link social__link--github ]" href="https://github.com/adahab91" target="_blank" ><i class="[ fab fa-github ][ social__icon ]"></i></a><br/>
+        <a class="[ social__link social__link--mail ]" href="mailto:ada.haaberg@gmail.com" ><i class="[ far fa-envelope ][ social__icon ]"></i></a> 
+    </div>
+
+
+    <!--Back to top button-->
+    <div class="[ back-to-top__container ]">
+        <i id="to-top" class="[ fas fa-chevron-up ][ back-to-top ]"></i>
+    </div>
     
+    
+
+    <!--information about me-->
     <div class="[ container-fluid ][ portfolio ]">
-        <div class="[ social ]">
-                <a class="[ social__link ]" href="https://github.com/adahab91" target="_blank" ><i class="[ fab fa-github ][ social__icon ]"></i></a> 
-                <a class="[ social__link ]" href="#" target="_blank"><i class="[ fab fa-facebook ][ social__icon ]"></i></a> 
-                <a class="[ social__link ]" href="#" target="_blank"><i class="[ fab fa-instagram ][ social__icon ]"></i></a>
-        </div>
         <div class="[ container ][ personal-info ]">
-            <img id="profile-pic" class="[ personal-info__image ]" src="./img/adaelise.jpg">
+            <img id="profile-pic" class="[ personal-info__image spinner-front ]" src="./img/adaelise.jpg">
             <h1 class="[ personal-info__name ]">Ada Elise Håberg</h1>
             <h3 class="[ personal-info__title ]">Front-end Developer</h3>
             <p class="[ personal-info__text ]"><span class="[ personal-info__skills ]" >HTML/CSS</span><span class="[ personal-info__skills ]">Sass</span><span class="[ personal-info__skills ]" >JavaScript</span><span class="[ personal-info__skills ]" >Photoshop</span><span class="[ personal-info__skills ]" >Illustrator</span><span class="[ personal-info__skills ]" >AdobeXD</span><span class="[ personal-info__skills ]" >Angular</span></p>        
@@ -117,6 +122,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script src="./scripts/potrait-overlay.js"></script> -->
+    <script src="./scripts/components.js"></script> 
 </body>
 </html>

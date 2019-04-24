@@ -10,6 +10,7 @@
 @import "./projects/letha-sp";
 @import "./projects/science-museum-sp";
 
+
 body{
     background-color: $light-pink;
 }
@@ -40,12 +41,22 @@ h1, h2, h3, p{
 .social{
     text-align: right;
     &__link{
-        display: inline-block;
-        position: relative;
-        margin-left: 15px;
+        position: fixed;
+        top: 5%;
+        //right: 2%;
         z-index: 2;
         &:hover{
             cursor: pointer;
+        }
+        &--github{
+            position: fixed;
+            top: 35%;
+            right: 1.5%;
+        }
+        &--mail{
+            position: fixed;
+            top: 45%;
+            right: 1.5%;
         }
     }
     &__icon{
@@ -61,7 +72,7 @@ h1, h2, h3, p{
 .personal-info{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15vh;
+    margin-top: 5vh;
     text-align: center;
     margin-bottom: 10vh;
     position: relative;
