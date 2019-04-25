@@ -1,5 +1,7 @@
 .logo{
     position: absolute;
+    top: 30px;
+    left: 25px;
     &__name{
         color: $black;
         font-family: $playfair;
@@ -24,7 +26,9 @@
     margin-top: 15vh;
     margin-bottom: 10vh;
     overflow: hidden;
-    
+    @media screen and (max-width: 450px){
+        margin-top: 25vh;
+    }
     &__heading{
         text-align: right;
         border-bottom: 3px solid $white;

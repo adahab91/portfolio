@@ -206,6 +206,8 @@
 }
 .logo {
   position: absolute;
+  top: 30px;
+  left: 25px;
 }
 .logo__name {
   color: #271f23;
@@ -230,6 +232,11 @@
   margin-top: 15vh;
   margin-bottom: 10vh;
   overflow: hidden;
+}
+@media screen and (max-width: 450px) {
+  .project-page {
+    margin-top: 25vh;
+  }
 }
 .project-page__heading {
   text-align: right;
@@ -331,6 +338,7 @@
 
 .letha__carousel {
   padding: 0;
+  z-index: 2;
 }
 
 .science-museum__container {
