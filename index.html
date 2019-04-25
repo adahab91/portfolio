@@ -35,8 +35,23 @@
         <div class="[ container ][ personal-info ]">
             <img id="profile-pic" class="[ personal-info__image spinner-front ]" src="./img/adaelise.jpg">
             <h1 class="[ personal-info__name ]">Ada Elise Håberg</h1>
-            <h3 class="[ personal-info__title ]">Front-end Developer</h3>
-            <p class="[ personal-info__text ]"><span class="[ personal-info__skills ]" >HTML/CSS</span><span class="[ personal-info__skills ]">Sass</span><span class="[ personal-info__skills ]" >JavaScript</span><span class="[ personal-info__skills ]" >Photoshop</span><span class="[ personal-info__skills ]" >Illustrator</span><span class="[ personal-info__skills ]" >AdobeXD</span><span class="[ personal-info__skills ]" >Angular</span></p>        
+            <h3 class="[ personal-info__title ]">Front-end Developer</h3>   
+            
+            <p onclick="toggleElement('toggle')" class="[ read-more ]">Click here to read more about me <i class="[ fas fa-chevron-down ][ read-more__arrow ]"></i></p>
+
+            <div id="toggle" class="[ toggle ]">
+                <h3 class="[ personal-info__title toggle__title ]">Skill set:</h3>
+                <p class="[ personal-info__text ]"><span class="[ personal-info__skills ]" >HTML/CSS</span><span class="[ personal-info__skills ]">Sass</span><span class="[ personal-info__skills ]" >JavaScript</span><span class="[ personal-info__skills ]" >Photoshop</span><span class="[ personal-info__skills ]" >Illustrator</span><span class="[ personal-info__skills ]" >AdobeXD</span><span class="[ personal-info__skills ]" >Angular</span></p>
+                <p class="[ read-more__text ]">
+                    27 year old Front-end developer from Norway, Sogn and Fjordane.<br/>
+                    Front-end Development education trough Noroff, shool of technology and digital media. <br/> 
+                    Got a bachelors degree in Innovationmanagement and Entrepreneurship. <br/> 
+                    Have a passion for coding and aesthetically pleasing webpages. <br/>
+                    Animal lover. Got three cats, 10 hens, 10 sheeps and 50 goats. <br/> 
+                </p>
+                
+            </div>
+        
         </div>
 
         
@@ -81,7 +96,7 @@
             <div class="[ col-md-4 ][ small-project-container ]">
                 <div class="[ col-12 ][ project--small ]" >
                     <div class="[ project angular-app-sp ]">
-                        <a class="[ overlay__link ]" href="#">
+                        <a class="[ overlay__link ]" href="mtg-cards.html">
                             <div class="[ overlay overlay--3 ]">
                                 <h3 class="[ label ]" >School project - Noroff</h3>
                                 <h1 class="[ title ]" >Angular App</h1>

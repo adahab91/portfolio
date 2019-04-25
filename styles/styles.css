@@ -98,8 +98,8 @@
 }
 
 .angular-app-sp {
-  background-color: green;
-  background-size: cover;
+  background: #fffdfd url(../img/projects/mtg-cards-sp/mtg-logo.png) center center no-repeat;
+  background-size: contain;
 }
 
 .letha-sp {
@@ -204,6 +204,31 @@
     margin-bottom: 0px;
   }
 }
+.read-more {
+  font-weight: 500;
+  border-bottom: 3px solid #fffdfd;
+  margin-top: 5%;
+  margin-bottom: 0;
+  padding-bottom: 1%;
+  cursor: pointer;
+}
+.read-more__arrow {
+  padding-left: 10px;
+}
+.read-more__text {
+  line-height: 3em;
+  padding: 5% 10%;
+}
+
+.toggle {
+  border-bottom: 3px solid #fffdfd;
+  display: none;
+  background-color: #f2a391;
+}
+.toggle__title {
+  padding-top: 5%;
+}
+
 .logo {
   position: absolute;
   top: 30px;
@@ -404,6 +429,8 @@ h1:hover, h2:hover, h3:hover, p:hover {
   text-align: center;
   margin-bottom: 10vh;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media screen and (max-width: 450px) {
   .personal-info {
@@ -448,6 +475,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
 .personal-info__skills {
   display: inline-block;
   margin: 0 15px;
+  border-bottom: 2px solid #fffdfd;
 }
 
 .project {

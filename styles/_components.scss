@@ -74,3 +74,33 @@
   }
 
 
+
+
+
+
+//READ MORE ABOUT ME
+.read-more{
+    font-weight: 500;
+    border-bottom: 3px solid $white;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    cursor: pointer;
+    &__arrow{
+        padding-left: 10px;
+    }
+    &__text{
+        line-height: 3em;
+        padding: 5% 10%;
+    }
+}
+
+//TOGGLE READ MORE ABOUT ME
+.toggle{
+    border-bottom: 3px solid $white;
+    display: none;
+    background-color: $pink;
+    &__title{
+       padding-top: 5%;
+    }
+}
