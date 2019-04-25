@@ -19,10 +19,8 @@ function toggleElement(id) {
     var e = document.getElementById(id);
     if(e.style.display == 'block'){ 
         e.style.display = 'none';
-        e.style.transition = "all 2s";
     }
     else {
         e.style.display = 'block';
-        e.style.transition = "all 2s";
     }
  }

@@ -210,7 +210,10 @@
   margin-top: 5%;
   margin-bottom: 0;
   padding-bottom: 1%;
+}
+.read-more:hover {
   cursor: pointer;
+  color: #f2a391;
 }
 .read-more__arrow {
   padding-left: 10px;
@@ -223,7 +226,7 @@
 .toggle {
   border-bottom: 3px solid #fffdfd;
   display: none;
-  background-color: #f2a391;
+  background-color: #fffdfd;
 }
 .toggle__title {
   padding-top: 5%;
@@ -394,7 +397,7 @@ body {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   color: #271f23;
   line-height: 27px;
 }
@@ -475,7 +478,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
 .personal-info__skills {
   display: inline-block;
   margin: 0 15px;
-  border-bottom: 2px solid #fffdfd;
+  border-bottom: 2px solid #f2a391;
 }
 
 .project {

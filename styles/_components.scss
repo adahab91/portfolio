@@ -85,7 +85,10 @@
     margin-top: 5%;
     margin-bottom: 0;
     padding-bottom: 1%;
-    cursor: pointer;
+    &:hover{
+        cursor: pointer;
+        color: $pink;
+    }
     &__arrow{
         padding-left: 10px;
     }
@@ -99,7 +102,7 @@
 .toggle{
     border-bottom: 3px solid $white;
     display: none;
-    background-color: $pink;
+    background-color: $white;
     &__title{
        padding-top: 5%;
     }

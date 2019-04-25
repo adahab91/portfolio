@@ -16,7 +16,7 @@ body{
 }
 p{
     font-family: $roboto;
-    font-weight: 100;
+    font-weight: 400;
     color: $black;
     line-height: 27px;
     @media screen and (max-width: 450px){
@@ -84,7 +84,7 @@ h1, h2, h3, p{
     &__skills{
         display: inline-block;
         margin: 0 15px;
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid $pink;
     }
 }
 
