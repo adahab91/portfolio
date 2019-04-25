@@ -1,3 +1,50 @@
+//SOCIAL LINKS
+.social{
+    text-align: right;
+    &__link{
+        position: fixed;
+        z-index: 2;
+        &:hover{
+            cursor: pointer;
+        }
+        
+        &--github{
+            position: fixed;
+            top: 35%;
+            right: 1.5%;
+            @media screen and (max-width: 992px){
+                position: absolute;
+                top: 40px;
+                right: 20px;
+            }
+        }
+        &--mail{
+            position: fixed;
+            top: 45%;
+            right: 1.5%;
+            @media screen and (max-width: 992px){
+                position: absolute;
+                top: 40px;
+                right: 80px;
+            }
+        }
+    }
+    &__icon{
+        font-size: 1.6em;
+        color: $black;
+        padding: 5px;
+        &:hover{
+            color: $dark-pink;
+        }
+        &--pink{
+            color: $dark-pink;
+        }
+    }
+}
+
+
+
+//BACK TO TOP BUTTON
 .back-to-top{
     position: fixed;
     bottom: 5%;
@@ -13,6 +60,9 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
     }
+    &--pink{
+        color: $dark-pink;
+    }
     @media screen and (max-width: 992px){
         display: none;
     }
@@ -22,4 +72,5 @@
     50%  {margin-bottom:7px;}
     100% {margin-bottom:0px;}
   }
+
 

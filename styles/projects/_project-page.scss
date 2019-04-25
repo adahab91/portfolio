@@ -24,6 +24,7 @@
     margin-top: 15vh;
     margin-bottom: 10vh;
     overflow: hidden;
+    
     &__heading{
         text-align: right;
         border-bottom: 3px solid $white;
@@ -34,6 +35,9 @@
             font-family: $roboto;
             font-size: 1.3em;
             text-transform: uppercase;   
+            @media screen and (max-width: 450px){
+                font-size: 1.2em;
+            }
         }
     }
     &__text-container{
@@ -42,8 +46,9 @@
         @media screen and (max-width: 767px){
             margin-top: 10vh;
         }  
-        @media screen and (max-width: 350px){
-            padding: 20px;
+        @media screen and (max-width: 450px){
+            padding: 10px;
+            margin-top: 1vh;
         }    
     }
     &__text{
@@ -57,6 +62,7 @@
     &__vw-image-container{
         margin: 0;
         padding: 0;
+        z-index: 2;
     }
     &__vw-image{
         width: 100%;

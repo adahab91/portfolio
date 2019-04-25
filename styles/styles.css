@@ -123,6 +123,52 @@
   right: 25%;
 }
 
+.social {
+  text-align: right;
+}
+.social__link {
+  position: fixed;
+  z-index: 2;
+}
+.social__link:hover {
+  cursor: pointer;
+}
+.social__link--github {
+  position: fixed;
+  top: 35%;
+  right: 1.5%;
+}
+@media screen and (max-width: 992px) {
+  .social__link--github {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+}
+.social__link--mail {
+  position: fixed;
+  top: 45%;
+  right: 1.5%;
+}
+@media screen and (max-width: 992px) {
+  .social__link--mail {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+  }
+}
+.social__icon {
+  font-size: 1.6em;
+  color: #271f23;
+  padding: 5px;
+}
+.social__icon:hover {
+  color: #d8725b;
+}
+.social__icon--pink {
+  color: #d8725b;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 5%;
@@ -137,6 +183,9 @@
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+}
+.back-to-top--pink {
+  color: #d8725b;
 }
 @media screen and (max-width: 992px) {
   .back-to-top {
@@ -196,6 +245,11 @@
   font-size: 1.3em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 450px) {
+  .project-page__heading--medium {
+    font-size: 1.2em;
+  }
+}
 .project-page__text-container {
   margin-top: 10px;
   padding-left: 3%;
@@ -205,9 +259,10 @@
     margin-top: 10vh;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .project-page__text-container {
-    padding: 20px;
+    padding: 10px;
+    margin-top: 1vh;
   }
 }
 .project-page__text {
@@ -223,6 +278,7 @@
 .project-page__vw-image-container {
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 .project-page__vw-image {
   width: 100%;
@@ -327,49 +383,10 @@ h1:hover, h2:hover, h3:hover, p:hover {
   font-size: 45px;
   font-family: "Playfair Display", serif;
 }
-
-.social {
-  text-align: right;
-}
-.social__link {
-  position: fixed;
-  top: 5%;
-  z-index: 2;
-}
-.social__link:hover {
-  cursor: pointer;
-}
-.social__link--github {
-  position: fixed;
-  top: 35%;
-  right: 1.5%;
-}
-@media screen and (max-width: 992px) {
-  .social__link--github {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+@media screen and (max-width: 450px) {
+  .portfolio__heading {
+    font-size: 33px;
   }
-}
-.social__link--mail {
-  position: fixed;
-  top: 45%;
-  right: 1.5%;
-}
-@media screen and (max-width: 992px) {
-  .social__link--mail {
-    position: absolute;
-    top: 5%;
-    right: 10%;
-  }
-}
-.social__icon {
-  font-size: 1.6em;
-  color: #271f23;
-  padding: 5px;
-}
-.social__icon:hover {
-  color: #d8725b;
 }
 
 .personal-info {
@@ -425,10 +442,6 @@ h1:hover, h2:hover, h3:hover, p:hover {
   margin: 0 15px;
 }
 
-.leitha {
-  z-index: 5;
-}
-
 .project {
   position: relative;
   display: block;
@@ -451,12 +464,6 @@ h1:hover, h2:hover, h3:hover, p:hover {
   height: 50%;
   padding: 15px;
 }
-@media screen and (max-width: 767px) {
-  .project--small {
-    height: 100%;
-    display: inline-block;
-  }
-}
 .project__text {
   display: flex;
   justify-content: center;
@@ -472,7 +479,7 @@ h1:hover, h2:hover, h3:hover, p:hover {
 }
 @media screen and (max-width: 767px) {
   .small-project-container {
-    height: 50vh;
+    height: 100vh;
   }
 }
 

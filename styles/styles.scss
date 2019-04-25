@@ -28,52 +28,14 @@ h1, h2, h3, p{
         cursor: default;
     }
 }
-
 .portfolio{
     padding: 5%;
     overflow: hidden;
     &__heading{
         font-size: 45px;
         font-family: $playfair;    
-    }
-}
-
-.social{
-    text-align: right;
-    &__link{
-        position: fixed;
-        top: 5%;
-        z-index: 2;
-        &:hover{
-            cursor: pointer;
-        }
-        &--github{
-            position: fixed;
-            top: 35%;
-            right: 1.5%;
-            @media screen and (max-width: 992px){
-                position: absolute;
-                top: 5%;
-                right: 5%;
-            }
-        }
-        &--mail{
-            position: fixed;
-            top: 45%;
-            right: 1.5%;
-            @media screen and (max-width: 992px){
-                position: absolute;
-                top: 5%;
-                right: 10%;
-            }
-        }
-    }
-    &__icon{
-        font-size: 1.6em;
-        color: $black;
-        padding: 5px;
-        &:hover{
-            color: $dark-pink;
+        @media screen and (max-width: 450px){
+            font-size: 33px;
         }
     }
 }
@@ -123,11 +85,6 @@ h1, h2, h3, p{
     }
 }
 
-.leitha{
-    z-index: 5;
-}
-
-
 .project{
     position: relative;
     display: block;
@@ -147,8 +104,8 @@ h1, h2, h3, p{
         height: 50%;
         padding: 15px;
         @media screen and (max-width: 767px){
-            height: 100%;
-            display: inline-block;
+            //height: 100%;
+            //display: inline-block;
         }
     }
     &__text{
@@ -165,7 +122,7 @@ h1, h2, h3, p{
     height: 38vw;
     max-height: 594px; 
     @media screen and (max-width: 767px){
-        height: 50vh;
+        height: 100vh;
     }
 }
 
